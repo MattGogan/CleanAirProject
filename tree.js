@@ -30,7 +30,7 @@ window.onload = function(){
 }
 
 function buttonClassString(){
-    return '<button class = "w3-animate-opacity, w3-button w3-green"';
+    return '<button class = "w3-animate-opacity, w3-button w3-green w3-round-large"';
 }
 
 
