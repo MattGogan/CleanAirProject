@@ -42,6 +42,18 @@ function go(){
     
 }
 
+
+
+/*
+EPA Webcodes
+Get model years available ->         https://www.fueleconomy.gov/ws/rest/vehicle/menu/year
+Get makers for that year  ->         https://www.fueleconomy.gov/ws/rest/vehicle/menu/make?year=2012
+Get models for a make     ->         https://www.fueleconomy.gov/ws/rest/vehicle/menu/model?year=2012&make=Honda
+Get a list of options for a model -> https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2012&make=Honda&model=Fit
+    -This also gets the vehicle ID
+Get MPG from ID           ->         https://www.fueleconomy.gov/ws/rest/ympg/shared/ympgVehicle/26425
+*/
+
 function nextQuestion(carbonEmissionAdd){
     netCarbonEmissions += carbonEmissionAdd;
     console.log("Running carbon emissions total for quiz at: " + netCarbonEmissions + "lbs CO2");
@@ -65,7 +77,7 @@ function addTrees(x){
     for(i = 0; i<x*2; i++){
     
     var t = document.createElement("img");
-    t.setAttribute("src", "tree.png");
+    t.setAttribute("src", "/assets/tree.png");
     t.setAttribute = ('class', 'absolute');
     t.classList.add("absolute");
     t.classList.add("fade-in");
@@ -90,7 +102,7 @@ function addFirstTree(){
     var renderTrees = document.getElementById("divRenderTrees");
     
     var t = document.createElement("img");
-    t.setAttribute("src", "tree.png");
+    t.setAttribute("src", "/assets/tree.png");
     t.setAttribute = ('class', 'absolute');
     t.classList.add("absolute");
     t.classList.add("fade-in");

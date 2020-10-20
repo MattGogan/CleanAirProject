@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+
+    <body>
+        
+        Year: <select id = "selectYear"  oninput = "getMakes()"></select><br>
+        Make: <select id = "selectMake"  oninput = "getModels()" disabled></select><br>
+        Model:<select id = "selectModel" oninput = "getOptions()" disabled></select><br>
+        Options:<select id = "selectOptions" oninput = "getMPG()" disabled></select><br>
+        <p id = "pResult"></p>
+        <script src = "/js/fuelstats.js"></script>
+    </body>
+</html>
