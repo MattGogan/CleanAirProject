@@ -18,6 +18,10 @@ img {
     z-index: -1;
   }
 
+  button.colored{
+    background-color: #57CC99;
+  }
+
   .fade-in {
     animation: fadeIn ease 10s;
     -webkit-animation: fadeIn ease 10s;

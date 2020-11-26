@@ -19,7 +19,7 @@ window.onload = function(){
     ];
 
     options = [
-        standardButton("Less Trees", 20, 1) + standardButton("More Trees", 1000, 1),
+        standardButton("Less Trees", 20, 1) + '&nbsp;' + standardButton("More Trees", 1000, 1),
         "<form class=\"w3-container w3-card-4 w3-animate-opacity\"><p><input class=\"w3-check\" type=\"checkbox\" checked=\"checked\"><label> I like trees</label></p><p><input class=\"w3-check\" type=\"checkbox\"><label> I'm unopinionated on trees</label></p><p><input class=\"w3-check\" type=\"checkbox\" disabled><label>I hate trees (Disabled)</label></p></form><br><button onclick = \"nextQuestion(200)\">Submit</button>",
         "<button class = \"w3-animate-opacity\" onclick=\"nextQuestion(5000)\">Yes</button>&nbsp;<button class = \"w3-animate-opacity\" onclick=\"nextQuestion()\">No</button>",
         "<button class = \"w3-animate-opacity\" onclick=\"nextQuestion()\">Yes</button>&nbsp;<button class = \"w3-animate-opacity\" onclick=\"nextQuestionShowEPA()\">No</button>",
@@ -34,10 +34,10 @@ function buttonClassString(){
 }
 
 function standardButton(content, lbCO2add, nextQuestionID){
-    return '<button class = "w3-animate-opacity, w3-button w3-green w3-round-large" onclick="nextQuestion('+ lbCO2add +')">' + content + '</button>';
+    return '<button class = "w3-animate-opacity w3-round-large colored" onclick="nextQuestion('+ lbCO2add +')">' + content + '</button>';
 }
 
-
+//w3-button w3-green w3-round-large
 
 function go(){
     
