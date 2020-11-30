@@ -1,3 +1,48 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+button{
+  padding: 10px;
+  font-size: 20px;
+  box-shadow: 5px;
+  margin-left: 10px;
+  min-width: 120px;
+  max-width: 120px;
+}
+
+input{
+  padding: 10px;
+  font-size: 20px;
+  box-shadow: 5px;
+  margin-left: 10px;
+  min-width: 120px;
+  max-width: 120px;
+}
+
+button.verticalList{
+  min-width: 300px;
+  max-width: 300px;
+  min-height: 80px;
+  max-height: 80px;
+  font-size: 22px;
+  margin-top: 0px;
+  background-color: white;
+  border: none;
+  box-shadow: 0px;
+  text-align: left;
+}
+
+.verticalList:hover{
+  color: green;
+  cursor: pointer;
+}
+
+.dollar-sign{
+  font-size:30px;
+}
+
 img {
     display: block;
     max-width:230px;
@@ -18,17 +63,28 @@ img {
     z-index: -1;
   }
 
-<<<<<<< Updated upstream
   button.colored{
     background-color: #57CC99;
-=======
+  }
+
+  button.colored:hover{
+    background-color: limegreen;
+  }
+
   .fade-in-fast{
     animation: fadeIn ease 2s;
     -webkit-animation: fadeIn ease 2s;
     -moz-animation: fadeIn ease 2s;
     -o-animation: fadeIn ease 2s;
     -ms-animation: fadeIn ease 2s;
->>>>>>> Stashed changes
+  }
+
+  .fade-in-doubletime{
+    animation: fadeIn ease 5s;
+    -webkit-animation: fadeIn ease 5s;
+    -moz-animation: fadeIn ease 5s;
+    -o-animation: fadeIn ease 5s;
+    -ms-animation: fadeIn ease 5s;
   }
 
   .fade-in {
@@ -62,3 +118,35 @@ img {
     0% {opacity:0;}
     100% {opacity:1;}
   }
+
+
+
+/*LOAD FROM BOTTOM DOESNT WORK*/
+
+.loadFromBottom{
+  animation-name: bottomToTop;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  -webkit-animation-name: bottomToTop;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-fill-mode: forwards;
+
+}
+
+  @keyframes bottomToTop {
+    0% {
+        height: 0%;
+    }
+    100% {
+        height: 100%;
+    }
+}
+
+@-webkit-keyframes bottomToTop {
+  0% {
+      height: 0%;
+  }
+  100% {
+      height: 100%;
+  }
+}
