@@ -18,8 +18,17 @@ img {
     z-index: -1;
   }
 
+<<<<<<< Updated upstream
   button.colored{
     background-color: #57CC99;
+=======
+  .fade-in-fast{
+    animation: fadeIn ease 2s;
+    -webkit-animation: fadeIn ease 2s;
+    -moz-animation: fadeIn ease 2s;
+    -o-animation: fadeIn ease 2s;
+    -ms-animation: fadeIn ease 2s;
+>>>>>>> Stashed changes
   }
 
   .fade-in {

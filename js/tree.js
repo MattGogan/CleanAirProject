@@ -33,8 +33,13 @@ function buttonClassString(){
     return '<button class = "w3-animate-opacity, w3-button w3-green w3-round-large"';
 }
 
+<<<<<<< Updated upstream
 function standardButton(content, lbCO2add, nextQuestionID){
     return '<button class = "w3-animate-opacity w3-round-large colored" onclick="nextQuestion('+ lbCO2add +')">' + content + '</button>';
+=======
+function standardButton(content, lbCO2add, nextQuestionID, classlist){
+    return '<button class = "w3-animate-opacity, w3-button w3-green w3-round-large" onclick="nextQuestion('+ lbCO2add +')">' + content + '</button>';
+>>>>>>> Stashed changes
 }
 
 //w3-button w3-green w3-round-large
