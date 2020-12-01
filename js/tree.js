@@ -98,7 +98,7 @@ function nextQuestion(carbonEmissionAdd, questionNumber){
 function addTrees(x){
     var renderTrees = document.getElementById("divRenderTrees");
 
-    for(i = 0; i<x; i++){
+    for(i = 0; i<10*x; i++){
     
     setTimeout(function(){ makeTree(renderTrees); }, Math.random()*10000);
 
