@@ -116,7 +116,10 @@ function makeTree(renderTrees){
     
 
     var right = window.innerWidth * Math.random()-50;
-    var top = window.innerHeight-500 * Math.random()-100;   //looked good at -100
+    var top = window.innerHeight-450 * Math.random()-100;   //looked good at -100
+    if(top>550){ //reroll the closest ones to average further away.
+        top = window.innerHeight-450 * Math.random()-100;
+    }
 
     t.style.right = right+"px";
     t.style.top = top+"px";
@@ -127,8 +130,9 @@ function makeTree(renderTrees){
     var please = String(toprounded);
     t.style.zIndex = please;
     
+    var scalemod = Math.pow(percentHeightFromBottom,2);
 
-    t.style.transform = 'scale('+percentHeightFromBottom+')';
+    t.style.transform = 'scale('+scalemod+')';
 
 
     trees.push(t);
