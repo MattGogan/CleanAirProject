@@ -107,7 +107,7 @@ function addTrees(x){
 
 function makeTree(renderTrees){
     var t = document.createElement("img");
-    t.setAttribute("src", "/assets/tree.png");
+    t.setAttribute("src", "assets/tree.png");
     t.setAttribute = ('class', 'absolute');
     t.classList.add("absolute");
     //t.classList.add("loadFromBottom");
@@ -145,7 +145,7 @@ function addFirstTree(){
     var renderTrees = document.getElementById("divRenderTrees");
     
     var t = document.createElement("img");
-    t.setAttribute("src", "/assets/tree.png");
+    t.setAttribute("src", "assets/tree.png");
     t.setAttribute = ('class', 'absolute');
     t.classList.add("absolute");
     t.classList.add("fade-in");
