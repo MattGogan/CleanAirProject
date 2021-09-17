@@ -114,7 +114,7 @@ function parseModels(val){
         var htmlString = "";
         for(var i = 0; i<elements.length; i++){
             htmlString += "<option value = \"" + elements[i].innerHTML + "\">"+ elements[i].innerHTML +"</option>";
-            //console.log(elements[i]);
+            console.log(elements[i]);
         }
     
         document.getElementById("selectModel").innerHTML = htmlString;
@@ -157,7 +157,7 @@ function parseOptions(val){
     var htmlString = "";
     for(var i = 0; i<elements.length; i++){
         htmlString += "<option value = \"" + elements[i].childNodes[1].innerHTML + "\">"+ elements[i].childNodes[0].innerHTML +"</option>";
-        //console.log(elements[i]);
+        console.log(elements[i]);
     }
 
     document.getElementById("selectOptions").innerHTML = htmlString;
@@ -169,12 +169,14 @@ function parseOptions(val){
 /////////////////////////////////////////////////////////////
 
 function getMPG(){
+    console.log("Doing get MPG")
     var carID = document.getElementById("selectOptions").value;
     
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-            //console.log(this.responseText);
+      console.log(this.status)
+      if (this.readyState == 4 && (this.status == 200)) {//geting 204 on this.status (no content... for new years...)
+            console.log(this.responseText);
             parseMPG(this.responseText);
       }
     };

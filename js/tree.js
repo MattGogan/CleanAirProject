@@ -112,7 +112,7 @@ function makeTree(renderTrees){
     t.setAttribute = ('class', 'absolute');
     t.classList.add("absolute");
     //t.classList.add("loadFromBottom");
-    //t.classList.add("fade-in");
+    t.classList.add("fade-in");
     
     
 
